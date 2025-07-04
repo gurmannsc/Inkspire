@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Be Vietnam Pro";
+}
+
+/* Header CSS */
+.navbar {
+    background-color: #f7fafc;
+    align-items: center;
+    border-bottom: 1px solid #e5e8eb;
+    position: sticky;
+}
+.navdiv {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: space-between;
+    background-color: #f7fafc;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0d141c;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    gap: 25px;
+    transition: 0.2s ease-in;
+}
+.navLinks a {
+    text-decoration: none;
+    color: #0d141c;
+}
+.navLinks a:hover {
+    text-decoration: underline;
+    transition: 0.2s ease-in;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo a {
+    padding-left: 8px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #0d141c;
+}
+
+.navbarCTA {
+    background-color: #3d99f5;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    border: transparent;
+    transition: ease-in 0.2s;
+}
+.navbarCTA:hover {
+    background-color: #2c85e4;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+
+.navbarCTA a {
+    color: #f7fafc;
+    font-weight: bold;
+}
+
+.navbarCTA a:hover {
+    text-decoration: none;
+}
+
+/* Home Page CSS */
+h1 {
+    color: #0d141c;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: bold;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #4a739c;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.error {
+    color: red;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container {
+    padding-top: 50px;
+    background-color: #f7fafc;
+    min-height: 630px;
+    height: fit-content;
+}
+
+.userInput {
+    display: flex;
+    flex-direction: column;
+}
+.mainInput {
+    background-color: #e8edf5;
+    border: 1px solid #e5e8eb;
+    border-radius: 8px;
+    max-width: 600px;
+    max-height: 1500px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in;
+    color: #0d141c;
+}
+.mainInput::placeholder {
+    color: #4a739c;
+}
+.mainInput:hover {
+    border: 1px solid #4a739c;
+    transition: 0.2s ease-in;
+}
+
+.generateContent_button {
+    width: 160px;
+    align-items: start;
+    background-color: #3d99f5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: transparent;
+    border-radius: 8px;
+    color: #f7fafc;
+    font-weight: bold;
+    font-family: "Be Vietnam Pro";
+    transition: ease-in 0.2s;
+}
+.generateContent_button:hover {
+    background-color: #2c85e4;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-bottom: 30px;
+}
+.generatedContent {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+/* Contact Form CSS */
+.contentContact{
+    display: flex;
+    justify-content: space-between; /*Imp to align both flex items to their repspective ends horizontally.*/
+}
+
+.contentLeft{
+    max-width: 475px;
+}
+
+.contentForm_right{
+    align-items: end;
+}
+.contentForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm_input{
+    padding: 15px 16px 15px 16px;
+    border-radius: 8px;
+    background-color: #e8edf5;
+    border: 1px solid #e5e8eb;
+    width: 475px;
+    margin: 6px;
+    min-height: 50px;
+    max-width: 475px;
+    min-width: 475px;
+    max-height: 250px;
+    transition: 0.2s ease-in;
+}
+.contactForm_input::placeholder{
+    color: #4a739c;
+}
+.contactForm_input:hover{
+    border-color: #4a739c;
+    transition: 0.2s ease-in;
+}
+#userMessage{
+    height: 100px;
+}
+
+.contactUs_button{
+    background-color: #3d99f5;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin: 6px;
+    border: transparent;
+    transition: ease-in 0.2s;
+}
+.contactUs_button:hover {
+    background-color: #2c85e4;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+.contactUs_button a{
+    color: #f7fafc;
+    font-weight: bold;
+}
+#preferEmailHeading{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#h4Contact{
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+#contactUs_Text{
+    white-space: pre-wrap;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    line-height: 23px;
+}
+#contactUs_Text a{
+    color: #4a739c;
+    text-decoration: underline;
+}
+
+/* Pricing Page CSS */
+.pricingContainer{
+    background-color: #f7fafc;
+    min-height: 630px;
+    padding-top: 40px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#pricingHeading{
+    margin-bottom: 15px;
+}
+.pricingContent{
+    max-width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+}
+
+.planContainer{
+    flex: 1;
+    width: 350px;
+    border: #4a739c 2px solid;
+    height: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+.planContainer:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+.planContainer p{
+    font-size: 14px;
+    font-weight: 500;
+}
+#freePlanContainer{
+    height: 470px;
+    z-index: 0;
+    border-color: #0d141c;
+}
+#plusPlanContainer{
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#proPlanContainer{
+    height: 470px;
+    z-index: 0;
+    border-color: #0d141c;
+}
+
+.priceHeading{
+    display: flex;
+    align-items: center;
+}
+#popular{
+    border: #4a739c 2px solid;
+    padding: 5px;
+    margin-left: 8px;
+    border-radius: 8px;
+    font-size: 10px;
+    color: #4a739c;
+    font-weight: 800;
+}
+#popular p{
+    font-size: 10px;
+}
+.planPrice{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.planPrice h3{
+    font-size: 35px;
+}
+.priceUnit{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.priceUnit p{
+    font-size: 12px;
+    font-weight: 550;
+    color: #646865;
+}
+.priceCTAButtonWrapper{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.priceCTAButton{
+    width: 280px;
+    background-color: #3d99f5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: transparent;
+    border-radius: 8px;
+    color: #f7fafc;
+    font-weight: bold;
+    transition: ease-in 0.2s;
+}
+.priceCTAButton:hover {
+    background-color: #2c85e4;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+.priceCTAButton a{
+    color: #f7fafc;
+}
+#freePlanButton{
+    background-color:#e5e8eb;
+    transition: none;
+    cursor: not-allowed;
+    color: #0d141c;
+}
+
+.tick-list{
+    list-style: none;
+    padding-left: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    margin-top: 0;
+}
+.tick-list li::before{
+    content: "✓";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 8px;
+}
+#endCTA{
+    color: #0d141c;
+    font-size: 10px;
+    font-weight: 500;
+    bottom: 10px;
+    left: 20px;
+    position: absolute;
+}
+.links{
+    color: #0d141c;
+    text-decoration: underline;
+}
